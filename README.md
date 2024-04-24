@@ -25,6 +25,25 @@ This is the official repository of the paper "Streamlining the Image Stitching P
     ```
 
 ## Usage
+Aligned images and masks can be obtained from  [UDIS](https://github.com/nie-lang/UnsupervisedDeepImageStitching)  or [UDIS++](https://github.com/nie-lang/UDIS2) 
+
+The datasets are organized as follows: 
+
+```
+dataset
+├── warp1
+│   ├── 000001.jpg
+│   ├── ...
+├── warp2
+│   ├── 000001.jpg
+│   ├── ...
+├── mask1
+│   ├── 000001.jpg
+│   ├── ...
+├── mask2
+│   ├── 000001.jpg
+│   ├── ...
+``
 
   - Run the script:
 
@@ -33,3 +52,15 @@ This is the official repository of the paper "Streamlining the Image Stitching P
     ```
 ## Citation
 
+Please cite our paper if you find this code useful for your research.
+
+```
+@misc{xie2024streamlining,
+      title={Streamlining the Image Stitching Pipeline: Integrating Fusion and Rectangling into a Unified Model}, 
+      author={Ziqi Xie},
+      year={2024},
+      eprint={2404.14951},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
