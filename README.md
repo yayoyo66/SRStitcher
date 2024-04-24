@@ -43,9 +43,9 @@ dataset
 ├── mask2
 │   ├── 000001.jpg
 │   ├── ...
-``
+```
 
-  - Run the script:
+- Run the script:
 
     ```bash
     python run.py
