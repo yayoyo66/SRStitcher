@@ -1,12 +1,6 @@
 # Reconstructing the Image Stitching Pipeline: Integrating Fusion and Rectangling into a Unified Inpainting Model(SRStitcher)
 Deep learning-based image stitching pipelines are typically divided into three cascading stages: registration, fusion, and rectangling. Each stage requires its own network training and is tightly coupled to the others, leading to error propagation and posing significant challenges to parameter tuning and system stability. This paper proposes the Simple and Robust Stitcher (SRStitcher), which revolutionizes the image stitching pipeline by simplifying the fusion and rectangling stages into a unified inpainting model, requiring no model training or fine-tuning. We reformulate the problem definitions of the fusion and rectangling stages and demonstrate that they can be effectively integrated into an inpainting task. Furthermore, we design the weighted masks to guide the reverse process in a pre-trained large-scale diffusion model, implementing this integrated inpainting task in a single inference. Through extensive experimentation, we verify the interpretability and generalization capabilities of this unified model, demonstrating that SRStitcher outperforms state-of-the-art methods in both performance and stability.
 
-## Table of Contents
-
-- [Requirements](#requirements)
-- [Dataset](#dataset)
-- [Usage](#usage)
-
 ## Requirements
 - Python >= 3.9
 - GPU (NVIDIA CUDA compatible)
@@ -103,3 +97,25 @@ control_v11p_sd15_inpaint ](https://huggingface.co/lllyasviel/control_v11p_sd15_
      ```bash
     python run.py  --config configs/controlnet_config.yaml
     ```
+
+##  Seed Robustness 
+The SD model's generation results are affected by `Torch.manual_seed()`. We tested our method's stability, as shown in the figure below.
+<img src="examples.png" width="800px"/>  
+
+However, random seed initialization is known to be affected by `cuda version`, `pytorch version`, and even `hardware device`. See [PyTorch Docs Reproducibility](https://pytorch.org/docs/stable/notes/randomness.html) 
+
+Therefore, even if you set the same seed, the results may be different from our results, but the overall performance should be close to our reported results. If there is a big difference, please report your test environment in the Issue to help us optimize the method. Thank you very much.
+
+## Citation
+If you find our code or paper useful to your research work, please consider citing our work using the following bibtex:
+
+```bibtex
+@misc{xie2024streamlining,
+      title={Streamlining the Image Stitching Pipeline: Integrating Fusion and Rectangling into a Unified Model}, 
+      author={Ziqi Xie},
+      year={2024},
+      eprint={2404.14951},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+```
