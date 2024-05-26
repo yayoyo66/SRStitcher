@@ -1,0 +1,13 @@
+device: "cuda"
+mode: "SD2-inpaint"
+pretrained_model_name_or_path: "stabilityai/stable-diffusion-2-inpainting"
+datapath: "examples"
+save_dir: "SRStitcherResults"
+seed: 0
+R: 20
+size: 512
+lamb: 200
+epsilon1: 128
+epsilon2: 128
+guidance_scale: 7.5
+num_inference_steps: 50

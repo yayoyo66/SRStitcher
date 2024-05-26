@@ -1,0 +1,14 @@
+device: "cuda"
+mode: "controlnet"
+pretrained_model_name_or_path: "runwayml/stable-diffusion-v1-5"
+controlnet_path: "lllyasviel/control_v11p_sd15_inpaint"
+datapath: "examples"
+save_dir: "controlnetResult"
+seed: 0
+R: 20
+size: 512
+lamb: 20
+epsilon1: 128
+epsilon2: 128
+guidance_scale: 7.5
+num_inference_steps: 50
