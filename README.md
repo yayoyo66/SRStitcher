@@ -94,7 +94,7 @@ stable-diffusion-2-1-unclip-small ](https://huggingface.co/stabilityai/stable-di
  Implementation version of SRStitcher on the [
 control_v11p_sd15_inpaint ](https://huggingface.co/lllyasviel/control_v11p_sd15_inpaint) 
 
- - Run the script to get SRStitcher-U results:
+ - Run the script to get SRStitcher-C results:
      ```bash
     python run.py  --config configs/controlnet_config.yaml
     ```
