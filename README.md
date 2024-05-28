@@ -1,4 +1,6 @@
-# Reconstructing the Image Stitching Pipeline: Integrating Fusion and Rectangling into a Unified Inpainting Model(SRStitcher)
+# Reconstructing the Image Stitching Pipeline: Integrating Fusion and Rectangling into a Unified Inpainting Model
+
+### [Paper](https://arxiv.org/abs/2404.14951)
 
 ## Requirements
 - Python >= 3.9
@@ -21,7 +23,7 @@
  
 ## Dataset
  
- We provide a `examples` document to reproduce Figure 2 from our paper
+ We provide a `examples` document to reproduce Figure 2 in our paper
  
  The complete UDIS-D dataset can be obtained from  [UDIS](https://github.com/nie-lang/UnsupervisedDeepImageStitching) 
   
