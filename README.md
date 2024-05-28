@@ -109,9 +109,9 @@ Therefore, even if you set the same seed, the results may be different from our 
 If you find our code or paper useful to your research work, please consider citing our work using the following bibtex:
 
 ```bibtex
-@misc{xie2024streamlining,
-      title={Streamlining the Image Stitching Pipeline: Integrating Fusion and Rectangling into a Unified Model}, 
-      author={Ziqi Xie},
+@misc{xie2024reconstructing,
+      title={Reconstructing the Image Stitching Pipeline: Integrating Fusion and Rectangling into a Unified Inpainting Model}, 
+      author={Ziqi Xie and Weidong Zhao and Xianhui Liu and Jian Zhao and Ning Jia},
       year={2024},
       eprint={2404.14951},
       archivePrefix={arXiv},
