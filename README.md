@@ -64,7 +64,7 @@ dataset
     python evaluation_ccs.py
     ```
    
- - Run the script to get SRStitcher-S results of UDIS-D:
+ - Run the script to get SRStitcher results of UDIS-D:
  
  Modify the `datapath` in `configs/SD2_config.yaml`
    
