@@ -66,7 +66,7 @@ dataset
    
  - Run the script to get SRStitcher results of UDIS-D:
  
- Modify the `datapath` in `configs/SD2_config.yaml`
+ Modify the `datapath` in `configs/inpaint_config.yaml`
    
  ## Variants
  
