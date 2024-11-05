@@ -19,7 +19,7 @@
     pip install -r requirements.txt
     ```
   
- **Notice: check `transformers==4.35.2`, other version may report errors**
+ **Notice: check `transformers==4.35.2` and `diffusers==0.27.2`, other version may report errors**
  
 ## Dataset
  
