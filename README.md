@@ -107,16 +107,21 @@ However, random seed initialization is known to be affected by `cuda version`, `
 
 Therefore, even if you set the same seed, the results may be different from our results, but the overall performance should be close to our reported results. If there is a big difference, please report your test environment in the Issue to help us optimize the method. Thank you very much.
 
+
+##  Limitations of Current T2I models 
+
+Through the test results, you can find that some images outside the mask are damaged, especially Chinese characters are very serious, this is an inherent flaw in the SD2 model, see the limitation section in the link  [
+stable-diffusion-2-inpainting](https://huggingface.co/stabilityai/stable-diffusion-2-inpainting) . In SD3, this problem has been well fixed, especially the problem of English character damage, you can try to reproduce our method on [
+SD3-Controlnet-Inpainting](https://huggingface.co/alimama-creative/SD3-Controlnet-Inpainting). (This version is not open source due to further work, but it is not difficult to reproduce.)
+
 ## Citation
 If you find our code or paper useful to your research work, please consider citing our work using the following bibtex:
 
 ```bibtex
-@misc{xie2024reconstructing,
-      title={Reconstructing the Image Stitching Pipeline: Integrating Fusion and Rectangling into a Unified Inpainting Model}, 
-      author={Ziqi Xie and Weidong Zhao and Xianhui Liu and Jian Zhao and Ning Jia},
-      year={2024},
-      eprint={2404.14951},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@inproceedings{xie2024reconstructing,
+  title={Reconstructing the Image Stitching Pipeline: Integrating Fusion and Rectangling into a UnifiedInpainting Model},
+  author={Ziqi, Xie and Weidong, Zhao and Xianhui, Liu and Jian, Zhao and Ning, Jia},
+  booktitle=NeurIPS,
+  year={2024}
 }
 ```
